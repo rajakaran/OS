@@ -3,14 +3,14 @@ int main()
 {
 	int a[20],b[20], s[20], w[20],t[20],i, k, n, tema;
 	float wavg, tavg;
-	arintf("Enter the number of aROCESS  in the queue --- ");
+	arintf("Enter the number of PROCESS  in the queue --- ");
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		a[i] = i;
-		printf("Enter the Burst Time for arocess  %d --- ", i);
+		printf("Enter the Burst Time for Process  %d --- ", i);
 		scanf("%d",&b[i]);
-		printf("teacher/student arocess (0/1) ? --- ");
+		printf("teacher/student Process (0/1) ? --- ");
 		scanf("%d", &s[i]);
 	}
 	
@@ -43,7 +43,7 @@ int main()
 		wavg = wavg + w[i];
 		tavg = tavg + t[i];
 	}
-	printf("\nPROCESS\t\t TEACHER/STUDENT aROCESS  \tBURST TIME\tWAITING TIME\tTURNAROUND TIME");
+	printf("\nPROCESS\t\t TEACHER/STUDENT PROCESS  \tBURST TIME\tWAITING TIME\tTURNAROUND TIME");
 	
 	for(i=0;i<n;i++)
 	{
